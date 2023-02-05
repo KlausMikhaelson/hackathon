@@ -4,7 +4,7 @@ import React from "react";
 const Walls = () => {
     const Wall1 = () => {
         const [ref] = useBox(() => ({
-            mass: 10000,
+            mass: 100000,
             position: [0,4,-13],
             args: [60, 5, 1, 1],
             
@@ -20,7 +20,7 @@ const Walls = () => {
     }
     const Wall2 = () => {
         const [ref] = useBox(() => ({
-            mass: 10000,
+            mass: 100000,
             position: [0,4,13],
             args: [60, 5, 1, 1],
             
@@ -36,7 +36,7 @@ const Walls = () => {
     }
     const Wall3 = () => {
         const [ref] = useBox(() => ({
-            mass: 10000,
+            mass: 100000,
             position: [28,4,8],
             args: [1, 5, 9, 1],
             
@@ -53,7 +53,7 @@ const Walls = () => {
 
     const Wall4 = () => {
         const [ref] = useBox(() => ({
-            mass: 10000,
+            mass: 100000,
             position: [-28,4,8],
             args: [1, 5, 9, 1],
             
@@ -70,7 +70,7 @@ const Walls = () => {
 
     const Wall5 = () => {
         const [ref] = useBox(() => ({
-            mass: 10000,
+            mass: 100000,
             position: [-28,4,-9],
             args: [1, 5, 6, 1],
             
@@ -87,7 +87,7 @@ const Walls = () => {
 
     const Wall6 = () => {
         const [ref] = useBox(() => ({
-            mass: 10000,
+            mass: 100000,
             position: [28,4,-9],
             args: [1, 5, 6, 1],
             

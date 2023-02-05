@@ -10,7 +10,8 @@ const Goalpost2 = () => {
         mass: 1000,
         type: 'Static',
         position: [26,1,-1],
-        rotation: [0,-Math.PI, 0]
+        rotation: [0,-Math.PI, 0],
+        args: [0.1,0.1,0.1]
     }))
   return (
     <mesh ref={ref} scale={0.4} position={[-10,1,1]}>

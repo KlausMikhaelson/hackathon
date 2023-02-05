@@ -31,6 +31,9 @@ const Ball = () => {
             if(Ball[0] > 26 && Ball[2] >= -5 && Ball[1] < 1) {
                 alert("Player1 Won !")
                 window.location.reload();
+            } else if(Ball[2] > -6 && Ball[0] < -26 && Ball[1] < 1) {
+                alert("Player2 Won !")
+                window.location.reload();
             }
             // check();
         }, [1000])

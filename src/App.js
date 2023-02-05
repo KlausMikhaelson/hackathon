@@ -18,7 +18,7 @@ function App() {
         <Physics
         defaultContactMaterial={{
           restitution: 0.5,
-          friction: 0
+          friction: 0.2
         }}
         >
           <Suspense fallback={<Html>Loading please wait</Html>}>

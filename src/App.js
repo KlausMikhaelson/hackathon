@@ -4,6 +4,7 @@ import { Suspense } from 'react';
 import { Html, OrbitControls } from "@react-three/drei"
 import { Physics } from "@react-three/cannon"
 import Model from './components/Model';
+import PlayerModel from './components/Player';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <OrbitControls />
             <ambientLight />
             <Model />
+            <PlayerModel />
           </Suspense>
         </Physics>
       </Canvas>

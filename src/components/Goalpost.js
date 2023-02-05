@@ -7,8 +7,8 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 const Goalpost = () => {
     const goalPost = useLoader(GLTFLoader, "/goal.glb")
     const [ref] = useBox(() => ({
-        mass: 100,
-        position: [-11,2,1]
+        mass: 1000,
+        position: [-25,2,-1]
     }))
   return (
     <mesh ref={ref} scale={0.4}>

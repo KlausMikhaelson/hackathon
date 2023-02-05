@@ -10,7 +10,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 
 
-const speed_2 = 4
+const speed_2 = 8
 
 do{
     var name2 = prompt("What should I call you player-2 ?").trim()

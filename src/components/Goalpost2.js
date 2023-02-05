@@ -7,9 +7,9 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 const Goalpost2 = () => {
     const goalPost = useLoader(GLTFLoader, "/goal2.glb")
     const [ref] = useBox(() => ({
-        mass: 1,
+        mass: 1000,
         type: 'Static',
-        position: [11,1,2],
+        position: [26,1,-1],
         rotation: [0,-Math.PI, 0]
     }))
   return (

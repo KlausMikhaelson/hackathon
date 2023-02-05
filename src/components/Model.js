@@ -11,12 +11,12 @@ const Model = () => {
   groundText.wrapT = RepeatWrapping
   groundText.repeat.set(5,5)
     const [ref] = useBox(() => ({
-        rotation:[-Math.PI / 2, 0, 0], position: [0, 0, 0], mass: 10, type: "Static", args: [30, 30, 2, 1]
+        rotation:[-Math.PI / 2, 0, 0], position: [0, 0, 0], mass: 10, type: "Static", args: [60, 30, 2, 1]
     }))
   return (
     <>
     <mesh ref={ref}>
-        <boxBufferGeometry attach='geometry' args={[30, 30, 2, 1]} />
+        <boxBufferGeometry attach='geometry' args={[60, 30, 2, 1]} />
         <meshBasicMaterial map={groundText} color='pink' attach='material' />
     </mesh>
     </>

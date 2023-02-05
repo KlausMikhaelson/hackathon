@@ -7,7 +7,7 @@ import { useFrame, useThree } from "@react-three/fiber";
 import React, {useEffect, useRef} from "react"
 import { useKeyboard } from "../hooks/Keyboard";
 
-const speed = 4
+const speed = 8
 
 const PlayerModel = () => {
     const [ref, api] = useBox(() => ({

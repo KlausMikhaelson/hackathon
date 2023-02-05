@@ -9,6 +9,7 @@ import Hurdle from './components/Enemy';
 import Goalpost from './components/Goalpost';
 import Goalpost2 from './components/Goalpost2';
 import Ball from './components/Ball';
+import Walls from './components/Boundary';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Goalpost />
             <Goalpost2 />
             <Ball />
+            <Walls />
           </Suspense>
         </Physics>
       </Canvas>

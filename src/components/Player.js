@@ -13,7 +13,7 @@ const PlayerModel = () => {
     const [ref, api] = useBox(() => ({
         mass: 1,
         type: "Dynamic",
-        position: [4, 8, 3],
+        position: [-7,1,1],
         args: [1,1,1]
     }))
     const vel = useRef([0, 0, 0])

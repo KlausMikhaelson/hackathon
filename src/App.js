@@ -5,17 +5,30 @@ import { Html, OrbitControls } from "@react-three/drei"
 import { Physics } from "@react-three/cannon"
 import Model from './components/Model';
 import PlayerModel from './components/Player';
+import Hurdle from './components/Enemy';
+import Goalpost from './components/Goalpost';
+import Goalpost2 from './components/Goalpost2';
+import Ball from './components/Ball';
 
 function App() {
   return (
     <div className='App'>
       <Canvas camera={{ position: [0, 5, 12] }}>
-        <Physics>
+        <Physics
+        defaultContactMaterial={{
+          restitution: 0.5,
+          friction: 0
+        }}
+        >
           <Suspense fallback={<Html>Loading please wait</Html>}>
             <OrbitControls />
             <ambientLight />
             <Model />
             <PlayerModel />
+            <Hurdle />
+            <Goalpost />
+            <Goalpost2 />
+            <Ball />
           </Suspense>
         </Physics>
       </Canvas>

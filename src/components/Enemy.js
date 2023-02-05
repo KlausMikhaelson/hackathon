@@ -12,7 +12,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 const speed_2 = 8
 
-do{
+do {
     var name2 = prompt("What should I call you player-2 ?").trim()
 } while (name2 !== null && name2 === "")
 
@@ -88,6 +88,9 @@ const Hurdle = () => {
         <>
 
             <mesh ref={ref}>
+                <Html>
+                    <p style={{ padding: "5px", color: "hotpink" }}>{name2}</p>
+                </Html>
                 <object3D>
                     <primitive object={modelPlayer.scene} />
                 </object3D>

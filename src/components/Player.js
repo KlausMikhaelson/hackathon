@@ -8,12 +8,12 @@ const PlayerModel = () => {
         mass: 1,
         type: "Dynamic",
         position: [4, 8, 3],
-        args: [0.5,0.5,0.5]
+        args: [0.3,0.3,0.3]
     }))
     const modelPlayer = useLoader(GLTFLoader, "/Burger.glb")
     return(
         <>
-        <mesh ref={ref}>
+        <mesh ref={ref} scale={0.5}>
         <object3D>
             <primitive object={modelPlayer.scene} />
         </object3D>

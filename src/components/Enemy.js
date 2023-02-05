@@ -69,7 +69,6 @@ const Hurdle = () => {
 
     })
 
-    const posArray = pos_2.current
     const { camera } = useThree()
     const itemPos = [Math.round(pos_2.current[0]), Math.round(pos_2.current[1]), Math.round(pos_2.current[2])];
     console.log(itemPos)

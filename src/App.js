@@ -14,7 +14,7 @@ import Walls from './components/Boundary';
 function App() {
   return (
     <div className='App'>
-      <Canvas camera={{ position: [0, 5, 12] }}>
+      <Canvas camera={{ position: [0, 15, 12] }}>
         <Physics
         defaultContactMaterial={{
           restitution: 0.5,
@@ -22,7 +22,7 @@ function App() {
         }}
         >
           <Suspense fallback={<Html>Loading please wait</Html>}>
-            <OrbitControls />
+            <OrbitControls enableZoom={false}/>
             <ambientLight />
             <Model />
             <PlayerModel />

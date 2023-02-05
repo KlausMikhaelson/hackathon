@@ -9,7 +9,7 @@ const Goalpost = () => {
     const [ref] = useBox(() => ({
         mass: 1000,
         type: 'Static',
-        position: [-25,2,-1],
+        position: [-25,1,-1],
         args: [0.1,0.1,0.1]
     }))
   return (

@@ -28,10 +28,10 @@ const Ball = () => {
         setInterval(() => {
             const Ball = [Math.round(pos.current[0]), Math.round(pos.current[1]), Math.round(pos.current[2])];
             console.log(Ball, "Ball")
-            if(Ball[0] > 26 && Ball[2] >= -5 && Ball[1] < 1) {
+            if(Ball[0] > 26 && Ball[1] < 1) {
                 alert("Player1 Won !")
                 window.location.reload();
-            } else if(Ball[2] > -6 && Ball[0] < -26 && Ball[1] < 1) {
+            } else if(Ball[0] < -26 && Ball[1] < 1) {
                 alert("Player2 Won !")
                 window.location.reload();
             }
